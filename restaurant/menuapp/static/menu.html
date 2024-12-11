@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <div>
+    <title>Restaurant Menu</title>
+        </div>
+
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://example.com/background.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        /* Overlay to darken the background image */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* Main container */
+        .menu-container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgb(255, 255, 255);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            color: #ffffff;
+            background-color: #d35400; /* Orange header */
+            border-radius: 15px 15px 0 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        /* Section titles */
+        h2 {
+            text-align: center;
+            color: #27ae60; /* Green color */
+            border-bottom: 2px solid #d35400;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Menu items */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .menu-item-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .menu-item-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        .menu-item-price {
+            font-size: 22px;
+            color: #e74c3c;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #bdc3c7;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .menu-container {
+                width: 95%;
+            }
+
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu-item img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="black">
+<div class="overlay"></div>
+
+<header>
+    <h1>WELCOME TO OUR RESTAURENT</h1>    
+</header>
+
+<div class="menu-container">
+
+    <div class="menu-section">
+        <h2>BITE BUZZ</h2>
+        <div class="menu-item">
+            <img src="/static/italian sandwich.jpg" alt="Italian Sandwich"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Italian Sandwich</p>
+                <p class="description">Crusty bread, cured meats, cheese, fresh veggies, and olive oil for a flavorful, hearty meal.</p>
+            </div>
+            <p class="menu-item-price">rs.150</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="/static/potato foccacica.webp" alt="Potato Foccacia"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Potato Foccacia</p>
+                <p class="description">Potato,vegetables, garlic and cream cheese.</p>
+            </div>
+            <p class="menu-item-price">rs.170</p>
+        </div>
+        <div class="menu-item">
+            <img src="/static/noodles.png"alt="Noodles"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Noodles</p>
+                <p class="description">Noodles,vegetables,mushrooms filled with garlic and cream cheese.</p>
+            </div>
+            <p class="menu-item-price">rs.110</p>
+        </div>
+        <div class="menu-item">
+            <img src="/static/Autmn fritto misto.avif"alt="Autmn Frittto Misto"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Autmn Frittto Misto</p>
+                <p class="description">Fritto,vegetables and cheese.</p>
+            </div>
+            <p class="menu-item-price">rs.135</p>
+    </div>
+    <div class="menu-item">
+        <img src="/static/casprese salad.avif"alt="Caprese Salad"> <!-- Replace with your image -->
+        <div class="menu-item-details">
+            <p class="menu-item-name">Caprese Salad</p>
+            <p class="description">Bread,vegetables,filled with garlic and cream cheese.<p>
+        </div>
+        <p class="menu-item-price">rs.95</p>
+</div>
+<div class="menu-item">
+    <img src="/static/frenchfries.jpeg"alt="French Fries"> <!-- Replace with your image -->
+    <div class="menu-item-details">
+        <p class="menu-item-name">French Fries</p>
+        <p class="description">Potato fried in fresh oil.</p>
+    </div>
+    <p class="menu-item-price">rs.140</p>
+</div>
+
+<center>
+    
+    </center>
+    <div class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+            <img src="/static/choco lava cake.jpeg" alt="Chocolate Lava Cake"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Chocolate Lava Cake</p>
+                <p class="description">Warm cake with a molten chocolate center.</p>
+            </div>
+            <p class="menu-item-price">rs.70</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="/static/tiramisu.jpeg" alt="Tiramisu"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Tiramisu</p>
+                <p class="description">Best dessert in the world.</p>
+            </div>
+            <p class="menu-item-price">rs.250</p>
+        </div>
+    </div>
+    <div class="menu-item">
+        <img src="/static/caramel pudding.jpeg"> <!-- Replace with your image -->
+        <div class="menu-item-details">
+            <p class="menu-item-name">Pudding</p>
+            <p class="description">Caramel Pudding.</p>
+        </div>
+        <p class="menu-item-price">rs.90</p>
+    </div>
+</div>
+<div class="menu-item">
+    <img src="/static/waffle.jpeg"> <!-- Replace with your image -->
+    <div class="menu-item-details">
+        <p class="menu-item-name">Waffle</p>
+        <p class="description">Delecious waffle topped with berries and jam.</p>
+    </div>
+    <p class="menu-item-price">rs.100</p>
+</div>
+<div class="menu-item">
+    <img src="/static/apple pie.jpeg" alt="Apple Pie"> <!-- Replace with your image -->
+    <div class="menu-item-details">
+        <p class="menu-item-name">Apple Pie</p>
+        <p class="description">Made with spiced aplle with a flaky crust.</p>
+    </div>
+    <p class="menu-item-price">rs.135</p>
+</div>
+
+    <div class="menu-section">
+        <h2>Beverages</h2>
+        <div class="menu-item">
+            <img src="/static/beer.jpeg" alt="Beer"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Beer</p>
+                <p class="description">Fermented beverage made with malted grains.</p>
+            </div>
+            <p class="menu-item-price">rs.200</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="/static/champagne.jpeg" alt="Champagne"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Champagne</p>
+                <p class="description">Sparkling wine with effervescenes.</p>
+            </div>
+            <p class="menu-item-price">rs.2500</p>
+        </div>
+    </div>
+    <div class="menu-item">
+        <img src="/static/mojito.jpeg" alt="Mojito"> <!-- Replace with your image -->
+        <div class="menu-item-details">
+            <p class="menu-item-name">Mojito</p>
+            <p class="description">Refreshing drink made with rum,mint,sugar,lime juice,soda water.</p>
+        </div>
+        <p class="menu-item-price">rs.80</p>
+    </div>
+    <div class="menu-item">
+        <img src="/static/cocktail.jpeg" alt="Cocktail"> <!-- Replace with your image -->
+        <div class="menu-item-details">
+            <p class="menu-item-name">Cocktail</p>
+            <p class="description">Spirits servred in martini glass with fruits and herbs.</p>
+        </div>
+        <p class="menu-item-price">rs.200</p>
+    </div>
+    <div class="menu-item">
+        <img src="/static/lemonade.jpeg" alt="Lemonade"> <!-- Replace with your image -->
+        <div class="menu-item-details">
+            <p class="menu-item-name">Lemonade</p>
+            <p class="description">Made with water,lemon and mint.</p>
+        </div>
+        <p class="menu-item-price">rs.70</p>
+    </div>
+    
+    <h2>BREWED BLISS</h2>
+        <div class="menu-item">
+            <img src="/static/esperesso.jpeg" alt="Espresso"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Espresso</p>
+                <p class="description">Coffe brewed by hot water through finely ground coffee beans.</p>
+            </div>
+            <p class="menu-item-price">rs.130</p>
+        </div>
+        <div class="menu-item">
+            <img src="/static/cold coffee.jpeg" alt="Cold Coffee"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Cold Coffee</p>
+                <p class="description">Milk,ice cubes,sugar and coffee powder.</p>
+            </div>
+            <p class="menu-item-price">rs.80</p>
+        </div>
+        <div class="menu-item">
+            <img src="/static/cappucino.jpeg" alt="Cappucino"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Cappucino</p>
+                <p class="description">Milk,foam,sugar and coffee powder.</p>
+            </div>
+            <p class="menu-item-price">rs.150</p>
+        </div>
+        <div class="menu-item">
+            <img src="/static/creamy coffee.jpeg" alt="Creamy Coffee"> <!-- Replace with your image -->
+            <div class="menu-item-details">
+                <p class="menu-item-name">Creamy Coffee</p>
+                <p class="description">Milk,cream,sugar and coffee powder.</p>
+            </div>
+            <p class="menu-item-price">rs.70</p>
+        </div>
+        <tr>
+            <td><h4 style="font-size: larger;"><center>"From Our Kitchen to Your Heart<333"</center></h4></td>
+        </tr>
+        <h3>Contact</h3>
+        <h4>Phone: +91 9876543210 Email id: littlelemon@gmail.com</h4>
+        <p>Address: 11, Anna Nagar, Avadi, Chennai</p>
+        
+
+       
+    
+    </body>
+    </html>
+        

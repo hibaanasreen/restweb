@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our Restaurent</title>
+   
+    
+</head>
+<style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#fbf5b9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(211, 201, 162);
+    border-radius: 10px;
+}
+
+.menu{
+    background-color: black;
+    color: rgb(250, 4, 4);
+    padding: 25px;
+    border-radius: 30px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.footer{
+    padding: 10px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fcfafa;
+    font-weight: bold;
+}
+
+.offer-txt{
+    color: black;
+}
+.hours{
+    width: 300px;
+    height: 80px;
+}
+
+.banner {
+    text-align: center;
+    background: url('banner.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: #fff;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(211, 205, 162);
+}
+
+.feature {
+    text-align: center;
+    background-color: rgb(240, 202, 133);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+p {
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+}
+
+.copy{
+    margin-left: auto
+}
+
+.hyperlink{
+    color: blue;
+} 
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/Screenshot 2024-12-08 164112.png" alt="Little Lemon Logo">
+            <h1>Little Lemon</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="administration.html">Administration</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner" style="background-image: url('offer.webp');">
+            <h2 class="offer-txt" >Tradition,Untouched!!</h2>
+              <h2 class="offer-txt"> "Welcome To Little Lemon Most Awarded Italian Restaurent"</h2>
+
+            <p class = 'offer-txt'>Where Flavor Meets Experience
+Dive into a culinary journey like no other, where every dish tells a story and every bite is a celebration,our restaurant blends exquisite flavors, fresh ingredients, and a warm, inviting ambiance. Whether you're craving a cozy dinner, a lively gathering, or a new taste adventure, we promise an unforgettable dining experience..</p>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h3>Our New Menu</h3>
+                <img src="/static/menu.jpeg" alt="Our New Menu">
+                <p>Excite your taste buds with our brand-new menu, crafted to bring fresh flavors and unique dishes to your table. From innovative creations to timeless classics reimagined, there’s something for everyone to savor. Explore our seasonal ingredients, bold spices, and mouthwatering combinations. Visit us today and experience the delicious difference.</p>
+                <a href="www.google.com">See our new menu</a>
+            </div>
+            <div class="feature">
+                <h3>Reserve your table</h3>
+                <img src="/static/table.jpg" alt="Reserve your table">
+                <p>Enjoy a seamless dining experience by reserving your table in advance. Whether it’s a romantic dinner, a family gathering, or a casual meal with friends, we’ve got the perfect spot for you. Select your preferred date, time, and party size, and let us take care of the rest. Book now to ensure your seat at our table.</p>
+                <a href="www.google.com">Book your table now</a>
+            </div>
+            <div class="feature">
+                <h3>Opening Hours</h3>
+                <img src="/static/food 4.jpg" class="hours" alt="Opening Hours">
+                <p>We’re here to serve you delicious meals and unforgettable moments every day of the week. Check out our opening hours below and plan your visit. Whether it’s a hearty breakfast, a leisurely lunch, or a delightful dinner, we’re ready to welcome you!.</p>
+                <ul>
+                    Monday - Friday: 11:00 AM - 10:00 PM <br>
+                    Saturday: 10:00 AM - 11:00 PM <br>
+                    Sunday: 10:00 AM - 9:00 PM <br>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="logo">
+                <img src="/static/Screenshot 2024-12-08 164112.png" class="footer" alt="Little Lemon Logo">
+                <p align="margin-right"> Design And Developed By Hiba Nasreen M </p>
+            </div>
+        </footer>
+    </main>
+
+
+   
+</body>
+</html>
