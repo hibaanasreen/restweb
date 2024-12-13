@@ -88,12 +88,57 @@ nav ul li {
     padding: 10px 10px;
 }
 
-nav ul li a {
+.menu ul li a {
     text-decoration: none;
     color: #fcfafa;
     font-weight: bold;
 }
+.navbar {
+    background-color: rgb(240, 202, 133); 
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:150px; 
+    max-width: 1600px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #c9a555; 
+    background-color: #5a3d32; 
+    transform: scale(1.1); 
+}
+
+.nav-links a.active {
+    color: #c9a555; 
+    font-weight: 700;
+    border-bottom: 2px solid #FFD700; 
+}
 .offer-txt{
     color: black;
 }
@@ -157,7 +202,7 @@ ul {
 }
 
 .hyperlink{
-    color: blue;
+    color: rgb(0, 255, 221);
 } 
 </style>
 <body>
@@ -166,14 +211,15 @@ ul {
             <img src="/static/Screenshot 2024-12-08 164112.png" alt="Little Lemon Logo">
             <h1>Little Lemon</h1>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="home.html">Home</a></li>
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="administration.html">Administration</a></li>
-                <li><a href="contactus.html">Contact us</a></li>
+        
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="administration.html">Admin</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
         <section class="banner" style="background-image: url('offer.webp');">
@@ -210,7 +256,7 @@ Dive into a culinary journey like no other, where every dish tells a story and e
         <footer>
             <div class="logo">
                 <img src="/static/Screenshot 2024-12-08 164112.png" class="footer" alt="Little Lemon Logo">
-                <p align="margin-right"> Design And Developed By Hiba Nasreen M </p>
+                <p align="margin-right"> Designed And Developed By Hiba Nasreen M </p>
             </div>
         </footer>
     </main>
@@ -234,16 +280,93 @@ Dive into a culinary journey like no other, where every dish tells a story and e
         font-size: 620%;
         font-style:peppy;
         background-color:#f6dba5;
-    .content{
+    }
+    .content
+    {
         font-size: larger;
         font-family: cursive;
-    }
+        nav ul 
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.footer{
+    padding: 10px 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fcfafa;
+    font-weight: bold;
+}
+.navbar {
+    background-color: rgb(240, 202, 133); 
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:50px; 
+    max-width: 1600px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #c9a555; 
+    background-color: #5a3d32; 
+    transform: scale(1.1); 
+}
+
+.nav-links a.active
+ {
+    color: #c9a555; 
+    font-weight: 700;
+    border-bottom: 2px solid #FFD700; 
+}
+    
 </style>
 <body bgcolor="#f6dba5">
     <center>
         <header style="color: crimson;">
             LITTLE LEMON RESTAURENT
         </header>
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="administration.html">Admin</a></li>
+            </ul>
+            </div>
 
         <img src="/static/NPT.webp" width="1100" height="500">
         
@@ -262,6 +385,7 @@ Dive into a culinary journey like no other, where every dish tells a story and e
 </body>
 </html>
 ```
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -296,6 +420,65 @@ Dive into a culinary journey like no other, where every dish tells a story and e
             background-color: rgba(0, 0, 0, 0.5);
             z-index: -1;
         }
+        nav ul li {
+    margin-right: 20px;
+}
+
+.footer{
+    padding: 10px 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fcfafa;
+    font-weight: bold;
+}
+.navbar {
+    background-color: rgb(240, 202, 133); 
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:50px; 
+    max-width: 1600px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #c9a555; 
+    background-color: #5a3d32; 
+    transform: scale(1.1); 
+}
+
+.nav-links a.active {
+    color: #c9a555; 
+    font-weight: 700;
+    border-bottom: 2px solid #FFD700; 
+}
 
         /* Main container */
         .menu-container {
@@ -397,6 +580,16 @@ Dive into a culinary journey like no other, where every dish tells a story and e
 <header>
     <h1>WELCOME TO OUR RESTAURENT</h1>    
 </header>
+
+
+<div class="navbar">
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="administration.html">Admin</a></li>
+    </ul>
+    </div>
 
 <div class="menu-container">
 
@@ -593,7 +786,7 @@ Dive into a culinary journey like no other, where every dish tells a story and e
     </html>
     ```
     ```
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -611,9 +804,57 @@ Dive into a culinary journey like no other, where every dish tells a story and e
         font-size: 450%;
         background-color: burlywood;
     }
-    footer{
+    .navbar {
+    background-color: rgb(240, 202, 133); 
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:50px; 
+    max-width: 1600px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #c9a555; 
+    background-color: #5a3d32; 
+    transform: scale(1.1); 
+}
+
+.nav-links a.active {
+    color: #c9a555; 
+    font-weight: 700;
+    border-bottom: 2px solid #FFD700; 
+}
+   
+footer{
         font-size: 350%;
         background-color: burlywood;
+    
     }
 </style>
 
@@ -622,6 +863,15 @@ Dive into a culinary journey like no other, where every dish tells a story and e
     <header>
         The Culinary Collective
     </header>
+
+    <div class="navbar">
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="administration.html">Admin</a></li>
+        </ul>
+       </div>
 
     <img src="/static/ybzz.jpg" width="600" height="500">
     <h1>Chef Hibaa</h1>
@@ -667,7 +917,7 @@ Dive into a culinary journey like no other, where every dish tells a story and e
     </footer>
    
         
-    <p style="font-family: sans-serif;">Design And Developed By Hiba Nasreen M </p>
+    <p style="font-family: sans-serif;">Designed And Developed By Hiba Nasreen M </p>
     
     </center>
 </body>
@@ -686,6 +936,66 @@ Dive into a culinary journey like no other, where every dish tells a story and e
         font-size: 420%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+    nav ul li {
+    margin-right: 20px;
+}
+
+.footer{
+    padding: 10px 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fcfafa;
+    font-weight: bold;
+}
+.navbar {
+    background-color: rgb(240, 202, 133); 
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:50px; 
+    max-width: 1600px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #c9a555; 
+    background-color: #5a3d32; 
+    transform: scale(1.1); 
+}
+
+.nav-links a.active
+ {
+    color: #c9a555; 
+    font-weight: 700;
+    border-bottom: 2px solid #FFD700; 
+}
     .address{
         font-size: x-large;
     }
@@ -698,7 +1008,16 @@ Dive into a culinary journey like no other, where every dish tells a story and e
     <center>
         <header style="color: rgb(176, 20, 20);">LITTLE LEMON RESTAURENT
         </header>
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="administration.html">Admin</a></li>
+            </ul>
+            </div>
         <img src="/static/new t.jpg" width="750" height="450">
+        
         
        
         </center>
@@ -712,18 +1031,20 @@ Dive into a culinary journey like no other, where every dish tells a story and e
     </center>
     </body>
     </html>
- ```
+```
 
 
 ## OUTPUT:
-![alt text](<Screenshot 2024-12-11 230736.png>)
-![alt text](<Screenshot 2024-12-11 230810.png>)
-![alt text](<Screenshot 2024-12-11 231035.png>)
-![alt text](<Screenshot 2024-12-11 231049.png>)
-![alt text](<Screenshot 2024-12-11 231104.png>)
-![alt text](<Screenshot 2024-12-11 231137.png>)
-![alt text](<Screenshot 2024-12-11 231204.png>)
-![alt text](<Screenshot 2024-12-11 231213.png>)
-![alt text](<Screenshot 2024-12-11 231231.png>)
+![alt text](<Screenshot 2024-12-13 231620.png>)
+![alt text](<Screenshot 2024-12-13 231656.png>)
+![alt text](<Screenshot 2024-12-13 231717.png>)
+![alt text](<Screenshot 2024-12-13 231738.png>)
+![alt text](<Screenshot 2024-12-13 231749.png>)
+![alt text](<Screenshot 2024-12-13 232329.png>)
+![alt text](<Screenshot 2024-12-13 232351.png>)
+![alt text](<Screenshot 2024-12-13 232408.png>)
+![alt text](<Screenshot 2024-12-13 232420.png>)
+![alt text](<Screenshot 2024-12-13 232439.png>)
+![alt text](<Screenshot 2024-12-13 232458.png>)
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
